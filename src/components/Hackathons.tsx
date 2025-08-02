@@ -75,6 +75,11 @@ const Hackathons = () => {
                   src={hackathon.image} 
                   alt={hackathon.title}
                   className="w-full h-48 object-cover transition-all duration-500 group-hover:scale-110"
+                  onError={(e) => {
+                    console.warn(`Failed to load hackathon image: ${hackathon.image}`);
+                    e.currentTarget.style.opacity = '0.3';
+                    e.currentTarget.style.filter = 'grayscale(100%)';
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-primary/30 opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
                 
