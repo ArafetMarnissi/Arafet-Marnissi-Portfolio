@@ -26,7 +26,7 @@ const Hackathons = () => {
       duration: "Competition Period",
       technologies: ["Machine Learning", "Deep Learning", "AI Innovation", "Python", "TensorFlow", "Neural Networks"],
       impact: "Achieved highest performance among all participants in AI innovation challenge",
-      image: "/assets/hackathons/aihack.jpg"
+      image: "/assets/hackathons/hackathon-1.jpg"
     },
     {
       title: "AINS Innovation & AI Hackathon",
@@ -38,7 +38,7 @@ const Hackathons = () => {
       duration: "48 hours",
       technologies: ["Python", "Machine Learning", "AI Innovation", "Social Impact AI"],
       impact: "Recognized as top AI innovation team for social good",
-      image: "/assets/hackathons/ains.jpg"
+      image: "/assets/hackathons/hackathon-2.jpg"
     },
     {
       title: "Open Startup Tunisia",
@@ -50,7 +50,7 @@ const Hackathons = () => {
       duration: "Competition Period",
       technologies: ["Entrepreneurship", "Business Innovation", "Startup Development"],
       impact: "National recognition for startup innovation and entrepreneurial excellence",
-      image: "/assets/hackathons/ost.jpg"
+      image: "/assets/hackathons/hackathon-3.jpg"
     }
   ];
 
