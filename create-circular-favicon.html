@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Circular Favicon</title>
+</head>
+<body>
+    <canvas id="canvas" width="32" height="32" style="border: 1px solid black;"></canvas>
+    <br>
+    <img id="sourceImage" src="src/assets/profile-photo.jpg" style="max-width: 200px;" crossorigin="anonymous">
+    <br>
+    <button onclick="createCircularFavicon()">Create Circular Favicon</button>
+    <br>
+    <a id="downloadLink" style="display: none;">Download Favicon</a>
+
+    <script>
+        function createCircularFavicon() {
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+            const img = document.getElementById('sourceImage');
+            
+            // Wait for image to load
+            img.onload = function() {
+                // Clear canvas
+                ctx.clearRect(0, 0, 32, 32);
+                
+                // Create circular clipping path
+                ctx.beginPath();
+                ctx.arc(16, 16, 16, 0, 2 * Math.PI);
+                ctx.clip();
+                
+                // Draw image to fit circle
+                ctx.drawImage(img, 0, 0, 32, 32);
+                
+                // Convert to ICO format and download
+                canvas.toBlob(function(blob) {
+                    const url = URL.createObjectURL(blob);
+                    const link = document.getElementById('downloadLink');
+                    link.href = url;
+                    link.download = 'favicon.ico';
+                    link.style.display = 'block';
+                    link.textContent = 'Download Circular Favicon';
+                    link.click();
+                }, 'image/x-icon');
+            };
+            
+            if (img.complete) {
+                img.onload();
+            }
+        }
+    </script>
+</body>
+</html>

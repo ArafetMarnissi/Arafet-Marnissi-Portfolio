@@ -1,0 +1,26 @@
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="circle16">
+      <circle cx="8" cy="8" r="8"/>
+    </clipPath>
+    <filter id="shadow16" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0.5" dy="0.5" stdDeviation="1" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+  </defs>
+  
+  <!-- Circular background -->
+  <circle cx="8" cy="8" r="8" fill="url(#gradient16)" filter="url(#shadow16)"/>
+  
+  <!-- Profile image clipped to circle -->
+  <image href="/profile-circular.jpg" x="0" y="0" width="16" height="16" clip-path="url(#circle16)" preserveAspectRatio="xMidYMid slice"/>
+  
+  <!-- Subtle border -->
+  <circle cx="8" cy="8" r="7.5" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="0.5"/>
+  
+  <defs>
+    <linearGradient id="gradient16" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+</svg>

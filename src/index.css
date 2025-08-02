@@ -1,0 +1,418 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be  .animate-float-delayed {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: 2s;
+  }
+  
+  .animate-expand-width {
+    animation: expandWidth 2s ease-out 1.8s both;
+  }
+  
+  .animate-gradient-x {
+    animation: gradientX 3s ease infinite;
+  }.
+*/
+
+@layer base {
+:root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 220 91% 55%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 200 100% 60%;
+    --accent-foreground: 240 10% 3.9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 220 91% 55%;
+
+    /* Custom AI Portfolio Colors */
+    --primary-glow: 220 91% 70%;
+    --tech-blue: 220 91% 55%;
+    --tech-cyan: 195 100% 60%;
+    --tech-purple: 240 80% 60%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--tech-blue)), hsl(var(--tech-purple)), hsl(var(--tech-cyan)));
+    --gradient-hero: 
+      radial-gradient(ellipse 800px 600px at 50% 0%, hsl(220 40% 12%) 0%, transparent 50%),
+      radial-gradient(ellipse 1200px 800px at 0% 100%, hsl(195 60% 8%) 0%, transparent 50%),
+      radial-gradient(ellipse 1000px 600px at 100% 50%, hsl(240 50% 6%) 0%, transparent 50%),
+      linear-gradient(180deg, hsl(220 25% 4%) 0%, hsl(220 30% 2%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(220 15% 15.9% / 0.5), hsl(220 15% 20% / 0.3));
+    --gradient-text: linear-gradient(135deg, hsl(var(--tech-blue)), hsl(var(--tech-cyan)), hsl(var(--tech-purple)));
+    
+    /* Shadows */
+    --shadow-glow: 0 0 40px hsl(var(--tech-blue) / 0.4);
+    --shadow-tech: 0 20px 40px -12px hsl(var(--tech-blue) / 0.3);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-pulse-slow {
+    animation: pulseGlow 3s ease-in-out infinite;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out;
+  }
+  
+  .animate-slide-in-left {
+    animation: slideInLeft 0.8s ease-out;
+  }
+  
+  .animate-slide-in-right {
+    animation: slideInRight 0.8s ease-out;
+  }
+  
+  .animate-scale-in {
+    animation: scaleIn 0.6s ease-out;
+  }
+  
+  .animate-bounce-subtle {
+    animation: bounceSubtle 2s ease-in-out infinite;
+  }
+  
+  .animate-glow {
+    animation: techGlow 2s ease-in-out infinite alternate;
+  }
+  
+  .animate-typing {
+    animation: typing 0.1s linear;
+  }
+
+  .animate-spin-slow {
+    animation: spin 3s linear infinite;
+  }
+
+  .animate-bounce-slow {
+    animation: bounceGentle 4s ease-in-out infinite;
+  }
+
+  .animate-float-delayed {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: 1s;
+  }
+  
+  .starry-bg {
+    background: 
+      /* Balanced tech grid */
+      linear-gradient(90deg, transparent 96%, rgba(59, 130, 246, 0.15) 100%),
+      linear-gradient(0deg, transparent 96%, rgba(139, 92, 246, 0.12) 100%),
+      
+      /* Moderate circuit lines */
+      linear-gradient(45deg, transparent 48%, rgba(59, 130, 246, 0.12) 50%, transparent 52%),
+      linear-gradient(-45deg, transparent 48%, rgba(139, 92, 246, 0.10) 50%, transparent 52%),
+      
+      /* Tech connection dots */
+      radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.25) 1px, transparent 3px),
+      radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.22) 1px, transparent 3px),
+      radial-gradient(circle at 20% 80%, rgba(34, 197, 234, 0.20) 1px, transparent 3px),
+      radial-gradient(circle at 80% 20%, rgba(236, 72, 153, 0.18) 1px, transparent 3px),
+      
+      /* Data flow streams */
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 100px,
+        rgba(59, 130, 246, 0.08) 102px,
+        rgba(59, 130, 246, 0.08) 104px,
+        transparent 106px
+      ),
+      
+      /* Neural network nodes */
+      radial-gradient(circle at 35% 25%, rgba(59, 130, 246, 0.15) 0%, transparent 25%),
+      radial-gradient(circle at 75% 65%, rgba(139, 92, 246, 0.12) 0%, transparent 25%),
+      radial-gradient(circle at 25% 75%, rgba(34, 197, 234, 0.10) 0%, transparent 25%),
+      
+      /* Ambient tech glow */
+      radial-gradient(ellipse at 50% 20%, rgba(59, 130, 246, 0.12) 0%, transparent 50%),
+      radial-gradient(ellipse at 20% 80%, rgba(139, 92, 246, 0.10) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 50%, rgba(34, 197, 234, 0.08) 0%, transparent 50%),
+      
+      /* Balanced base gradient */
+      linear-gradient(135deg, 
+        rgba(71, 85, 105, 0.15) 0%,
+        rgba(51, 65, 85, 0.20) 25%,
+        rgba(71, 85, 105, 0.15) 50%,
+        rgba(51, 65, 85, 0.20) 75%,
+        rgba(71, 85, 105, 0.15) 100%
+      );
+      
+    background-size: 
+      100px 100px,
+      100px 100px,
+      60px 60px,
+      60px 60px,
+      80px 80px,
+      80px 80px,
+      80px 80px,
+      80px 80px,
+      200px 40px,
+      250px 250px,
+      250px 250px,
+      250px 250px,
+      300px 300px,
+      300px 300px,
+      300px 300px,
+      100% 100%;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+  
+  @keyframes pulseGlow {
+    0%, 100% {
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 30px rgba(59, 130, 246, 0.6);
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes bounceSubtle {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-4px);
+    }
+  }
+  
+  @keyframes techGlow {
+    from {
+      box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+    }
+    to {
+      box-shadow: 0 0 25px rgba(139, 92, 246, 0.6);
+    }
+  }
+  
+  @keyframes typing {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes bounceGentle {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  @keyframes expandWidth {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes gradientX {
+    0%, 100% {
+      background-size: 200% 200%;
+      background-position: left center;
+    }
+    50% {
+      background-size: 200% 200%;
+      background-position: right center;
+    }
+  }
+
+  @keyframes spinSlow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Horizontal scrollable gallery styles */
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+  }
+
+  /* Gradient text utility */
+  .bg-gradient-text {
+    background: var(--gradient-text);
+    background-image: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}
