@@ -567,19 +567,15 @@ const Hero = () => {
                         <div className="absolute inset-0 rounded-2xl border-2 border-transparent bg-gradient-to-r from-tech-blue via-tech-purple to-tech-cyan opacity-0 group-hover:opacity-50 transition-opacity duration-500 -z-10"></div>
                       </div>
                       
-                      {/* Background image */}
+                      {/* Background image - only visible on hover */}
                       <img 
                         src={photo.src}
                         alt={photo.title}
-                        className="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
-                        onLoad={(e) => {
-                          e.currentTarget.style.opacity = '1';
-                        }}
+                        className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-90 transition-opacity duration-500 group-hover:scale-110"
                         onError={(e) => {
                           console.warn(`Failed to load image: ${photo.src}`);
                           e.currentTarget.style.opacity = '0';
                         }}
-                        style={{ opacity: 0 }}
                       />
                       
                       {/* Enhanced hover overlay */}
