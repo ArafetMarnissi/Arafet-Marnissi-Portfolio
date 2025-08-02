@@ -477,56 +477,56 @@ const Hero = () => {
                   {/* Photo cards */}
                   {[
                     {
-                      src: "/src/assets/general/VIVATECH2025_PARIS8EVENT.jpg",
+                      src: "/assets/conferences/VIVATECH2025_PARIS8EVENT.jpg",
                       title: "VivaTech 2025",
                       location: "Paris, France",
                       type: "Conference",
                       date: "2025"
                     },
                     {
-                      src: "/src/assets/general/AIHACKFLOWconference_place ESPRITUNIVERSITY_2023.jpg.jpg", 
+                      src: "/assets/conferences/AIHACKFLOWconference_place ESPRITUNIVERSITY_2023.jpg.jpg", 
                       title: "AI HackFlow Conference",
                       location: "ESPRIT University",
                       type: "Conference",
                       date: "2023"
                     },
                     {
-                      src: "/src/assets/general/PResentingAIHACKFLOW_2023_PLACEESPRIT.jpg",
+                      src: "/assets/conferences/PResentingAIHACKFLOW_2023_PLACEESPRIT.jpg",
                       title: "Presenting at AI HackFlow",
                       location: "ESPRIT University",
                       type: "Presentation",
                       date: "2023"
                     },
                     {
-                      src: "/src/assets/general/AIHACKFLOWcompetition_2023_placeESPRIT.jpg.jpg",
+                      src: "/assets/conferences/AIHACKFLOWcompetition_2023_placeESPRIT.jpg.jpg",
                       title: "AI HackFlow Competition",
                       location: "ESPRIT University",
                       type: "Competition",
                       date: "2023"
                     },
                     {
-                      src: "/src/assets/general/CARIADHACK_byVWGROUP_MUNICHGERMANY.jpeg",
+                      src: "/assets/conferences/CARIADHACK_byVWGROUP_MUNICHGERMANY.jpeg",
                       title: "CARIAD Hack by VW Group",
                       location: "Munich, Germany",
                       type: "Hackathon",
                       date: "2024"
                     },
                     {
-                      src: "/src/assets/general/DEEPFLOWworshop_placeESPRIT university_2023.jpg",
+                      src: "/assets/conferences/DEEPFLOWworshop_placeESPRIT university_2023.jpg",
                       title: "DeepFlow Workshop",
                       location: "ESPRIT University",
                       type: "Workshop",
                       date: "2023"
                     },
                     {
-                      src: "/src/assets/general/InnovationHAck_2022_organized byinnovationforchange_placesousse.jpg",
+                      src: "/assets/conferences/InnovationHAck_2022_organized byinnovationforchange_placesousse.jpg",
                       title: "Innovation Hack 2022",
                       location: "Sousse, Tunisia",
                       type: "Hackathon",
                       date: "2022"
                     },
                     {
-                      src: "/src/assets/general/OST_event_2023_Tunsia.jpg",
+                      src: "/assets/conferences/OST_event_2023_Tunsia.jpg",
                       title: "Open Startup Tunisia Event",
                       location: "Tunisia",
                       type: "Event",

@@ -2,12 +2,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Trophy, Users, Clock } from "lucide-react";
 
-// Import hackathon images
-import orangeImg from "@/assets/hackathons/Orange summer challenge.png";
-import aihackImg from "@/assets/hackathons/AIHACK.jpg";
-import ainsImg from "@/assets/hackathons/AINS.jpg";
-import ostImg from "@/assets/hackathons/OST.jpg";
-
 const Hackathons = () => {
   const hackathons = [
     {
@@ -20,7 +14,7 @@ const Hackathons = () => {
       duration: "Summer 2023",
       technologies: ["AI Development", "Machine Learning", "Health Tech", "Python", "TensorFlow"],
       impact: "EpiSafe solution recognized for innovative healthcare AI application",
-      image: orangeImg
+      image: "/assets/hackathons/Orange summer challenge.png"
     },
     {
       title: "AI Hackathon",
@@ -32,7 +26,7 @@ const Hackathons = () => {
       duration: "Competition Period",
       technologies: ["Machine Learning", "Deep Learning", "AI Innovation", "Python", "TensorFlow", "Neural Networks"],
       impact: "Achieved highest performance among all participants in AI innovation challenge",
-      image: aihackImg
+      image: "/assets/hackathons/AIHACK.jpg"
     },
     {
       title: "AINS Innovation & AI Hackathon",
@@ -44,7 +38,7 @@ const Hackathons = () => {
       duration: "48 hours",
       technologies: ["Python", "Machine Learning", "AI Innovation", "Social Impact AI"],
       impact: "Recognized as top AI innovation team for social good",
-      image: ainsImg
+      image: "/assets/hackathons/AINS.jpg"
     },
     {
       title: "Open Startup Tunisia",
@@ -56,7 +50,7 @@ const Hackathons = () => {
       duration: "Competition Period",
       technologies: ["Entrepreneurship", "Business Innovation", "Startup Development"],
       impact: "National recognition for startup innovation and entrepreneurial excellence",
-      image: ostImg
+      image: "/assets/hackathons/OST.jpg"
     }
   ];
 
