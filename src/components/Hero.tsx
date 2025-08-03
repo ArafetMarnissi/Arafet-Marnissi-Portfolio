@@ -234,7 +234,7 @@ const Hero = () => {
                           </div>
                           <div className="flex-1">
                             <div className="flex items-center gap-2 mb-1">
-                              <h4 className="font-semibold text-foreground">ESPRIT School of Engineering</h4>
+                              <h4 className="font-semibold text-foreground">ESPRIT Engineering School</h4>
                               <span className="text-xs px-2 py-1 rounded-full bg-tech-blue/10 text-tech-blue border border-tech-blue/20">Completed</span>
                             </div>
                             <p className="text-sm text-accent font-medium mb-1">Software Engineering Degree</p>
