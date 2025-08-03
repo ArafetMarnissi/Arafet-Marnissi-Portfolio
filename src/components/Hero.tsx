@@ -234,7 +234,7 @@ const Hero = () => {
                           </div>
                           <div className="flex-1">
                             <div className="flex items-center gap-2 mb-1">
-                              <h4 className="font-semibold text-foreground">ESPRIT University</h4>
+                              <h4 className="font-semibold text-foreground">-ESPRIT School of Engineering</h4>
                               <span className="text-xs px-2 py-1 rounded-full bg-tech-blue/10 text-tech-blue border border-tech-blue/20">Completed</span>
                             </div>
                             <p className="text-sm text-accent font-medium mb-1">Software Engineering Degree</p>
@@ -493,14 +493,14 @@ const Hero = () => {
                     {
                       src: "/assets/conferences/presenting-aihackflow-2023.jpg",
                       title: "Presenting at AI HackFlow",
-                      location: "ESPRIT University",
+                      location: "ESPRIT School of Engineering",
                       type: "Presentation",
                       date: "2023"
                     },
                     {
                       src: "/assets/conferences/aihackflow-competition-2023.jpg",
                       title: "AI HackFlow Competition",
-                      location: "ESPRIT University",
+                      location: "ESPRIT School of Engineering",
                       type: "Competition",
                       date: "2023"
                     },
@@ -514,7 +514,7 @@ const Hero = () => {
                     {
                       src: "/assets/conferences/deepflow-workshop-2023.jpg",
                       title: "DeepFlow Workshop",
-                      location: "ESPRIT University",
+                      location: "ESPRIT School of Engineering",
                       type: "Workshop",
                       date: "2023"
                     },
