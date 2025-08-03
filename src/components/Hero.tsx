@@ -486,7 +486,7 @@ const Hero = () => {
                     {
                       src: "/assets/conferences/aihackflow-conference-2023.jpg", 
                       title: "AI HackFlow Conference",
-                      location: "ESPRIT University",
+                      location: "ESPRIT School of Engineering",
                       type: "Conference",
                       date: "2023"
                     },
