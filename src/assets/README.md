@@ -4,7 +4,7 @@
 
 To add your profile photo to the hero section:
 
-1. **Add your photo**: Place your profile photo in this folder and name it `profile-photo.jpg` (or update the filename in the Hero component)
+1. **Add your photo**: Place your profile photo in this folder and name it `profile-photo.png` (or update the filename in the Hero component)
 
 2. **Supported formats**: .jpg, .jpeg, .png, .webp
 
@@ -17,7 +17,7 @@ To add your profile photo to the hero section:
 4. **Update the import** (optional): If you want to use Vite's asset handling, uncomment and update the import line in `Hero.tsx`:
 
    ```tsx
-   import profilePhoto from "@/assets/profile-photo.jpg";
+   import profilePhoto from "@/assets/profile-photo.png";
    ```
 
    Then update the src attribute:
@@ -30,7 +30,7 @@ To add your profile photo to the hero section:
 
 The Hero component is currently set up to look for your photo at:
 
-- Path: `/src/assets/profile-photo.jpg`
+- Path: `/src/assets/profile-photo.png`
 - Fallback: Shows "JBS" initials if photo is not found
 - Styling: Circular avatar with tech-blue border and glow effect
 

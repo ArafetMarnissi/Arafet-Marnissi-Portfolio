@@ -1,8 +1,8 @@
-# Jihed Ben Salah Portfolio
+# Arafet Marnissi Portfolio
 
-This is the personal portfolio website of Jihed Ben Salah, AI Engineer & Data Scientist.
+This is the personal portfolio website of Arafet Marnissi, AI Engineer specializing in Generative AI & LLMOps.
 
-Built with React, TypeScript, Vite, and Tailwind CSS. Showcases professional experience, hackathon victories, conferences, and projects.
+Built with React, TypeScript, Vite, and Tailwind CSS. Showcases professional experience, projects, certifications, and mentoring activities.
 
 ## Quick Start
 

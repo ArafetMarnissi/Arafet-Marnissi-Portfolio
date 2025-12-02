@@ -26,79 +26,52 @@ const Experience = () => {
   
   const experiences = [
     {
-      title: "Data Scientist - AI & Data Team",
-      company: "Opmobility",
-      period: "01/2025 - 07/2025",
-      country: "France",
-      countryCode: "🇫🇷",
-      location: "Paris, France",
-      description: "Specializing in MLOps integration with Databricks, deploying RAG-based LLM solutions using Llama architecture, and developing computer vision models achieving 95% accuracy for production anomaly detection.",
+      title: "PFE Intern – Generative AI & LLMOps",
+      company: "SOFRECOM TUNISIE",
+      period: "03/2025 - 09/2025",
+      country: "Tunisia",
+      countryCode: "��",
+      location: "Tunis, Tunisia",
+      description: "Designed and deployed 'Jira Co-Pilot' end-to-end, a multi-agent RAG system transforming Jira archives into a Knowledge Graph for semantic, structured, and graph queries.",
       achievements: [
-        "Designed and deployed computer vision models achieving 95% accuracy for anomaly detection in production",
-        "Developed RAG-based chatbot using Llama architecture reducing query response time by 60%",
-        "Implemented MLOps systems on Databricks improving model deployment efficiency by 40%"
+        "Orchestrated hierarchical AI architecture with LangGraph, including automatic correction loop for improved reliability",
+        "Developed complete ETL pipeline for Knowledge Graph construction in Weaviate, enabling multi-modal querying",
+        "Containerized full-stack application (FastAPI, React) and orchestrated deployment on Google Kubernetes Engine (GKE) via fully automated GitLab CI/CD pipeline",
+        "Implemented infrastructure as code using Terraform for reproducible cloud-native deployments"
       ],
-      technologies: ["Databricks", "Python", "TensorFlow", "RAG", "Llama", "YOLO", "LangChain", "MLflow", "PySpark"]
+      technologies: ["Python", "FastAPI", "LangGraph", "Weaviate", "PostgreSQL", "React", "Docker", "Kubernetes (GKE)", "GitLab CI/CD", "Terraform", "GCP"]
     },
     {
-      title: "AI Consultant & Backend Developer",
-      company: "Elepzia",
-      period: "07/2023 - 02/2025",
+      title: "Data Science Intern",
+      company: "ATTIJARI BANK",
+      period: "07/2024 - 09/2024",
+      country: "Tunisia",
+      countryCode: "��",
+      location: "Ariana, Tunisia",
+      description: "Developed machine learning solutions for customer attrition analysis and prediction with complete MLOps pipeline implementation.",
+      achievements: [
+        "Simulated customer data and implemented machine learning models to analyze and predict customer attrition patterns",
+        "Created CI/CD pipeline to streamline model training, testing, and deployment processes",
+        "Used DVC (Data Version Control) and MLflow to manage model artifacts and track experiments systematically",
+        "Deployed final model using Flask, making it accessible via web application for business stakeholders"
+      ],
+      technologies: ["Python", "Machine Learning", "Flask", "MLflow", "DVC", "CI/CD", "Data Analysis", "Model Deployment"]
+    },
+    {
+      title: "Web Development Intern",
+      company: "ATTIJARI ASSURANCE",
+      period: "07/2023 - 09/2023",
       country: "Tunisia",
       countryCode: "🇹🇳",
       location: "Tunis, Tunisia",
-      description: "Leading AI strategy development with advanced LLM integration using LangChain and LangGraph frameworks, while architecting scalable backend solutions serving 10K+ daily requests for NLP and time series analysis.",
+      description: "Developed complete worker registration application with user-friendly interface and robust authentication system.",
       achievements: [
-        "Led Data & AI team coordination improving project delivery time by 30%",
-        "Developed RESTful APIs using FastAPI handling 10K+ daily requests for AI project integration",
-        "Built scalable backend systems reducing processing time by 50% for NLP and time series analysis"
+        "Designed user-friendly interface for registration process, ensuring smooth experience for workers",
+        "Developed complete worker registration application using RESTful APIs to handle all associated operations",
+        "Implemented robust authentication system using tokens or session management to secure application access",
+        "Created responsive web interface with modern design patterns and best practices"
       ],
-      technologies: ["Python", "FastAPI", "Django", "NLP", "Time Series", "OpenRouter", "Azure", "LangChain", "LangGraph", "PostgreSQL"]
-    },
-    {
-      title: "AI Research Intern",
-      company: "Cariad (Volkswagen Group)",
-      period: "05/2024 - 11/2024",
-      country: "Germany",
-      countryCode: "🇩🇪",
-      location: "Berlin, Germany",
-      description: "Architected end-to-end MLOps pipelines for autonomous vehicle scenario clustering and deployed generative diffusion models for critical ADAS testing scenarios using Azure Machine Learning.",
-      achievements: [
-        "Built ML pipeline for autonomous vehicle scenario clustering with MLOps integration",
-        "Developed generative models for critical scenario generation for ADAS testing",
-        "Implemented data preparation and model training pipelines on Azure"
-      ],
-      technologies: ["Python", "PyTorch", "DBSCAN", "NumPy", "Pandas", "Azure Machine Learning", "Diffusion Models", "MLflow"]
-    },
-    {
-      title: "ML & Cloud Intern",
-      company: "Orange Tunisie",
-      period: "06/2023 - 11/2023",
-      country: "Tunisia",
-      countryCode: "🇹🇳",
-      location: "Tunis, Tunisia",
-      description: "Developed LSTM models for epileptic seizure prediction and deployed solutions on AWS cloud infrastructure.",
-      achievements: [
-        "Built deep learning models for biomedical signal analysis achieving 94% accuracy",
-        "Deployed scalable ML solutions on AWS with automated CI/CD pipelines",
-        "Conducted research on time series analysis for medical applications"
-      ],
-      technologies: ["Python", "LSTM", "TensorFlow", "AWS", "Docker", "Time Series Analysis", "Medical AI"]
-    },
-    {
-      title: "Software Development Intern",
-      company: "STB Banque",
-      period: "07/2022 - 09/2022",
-      country: "Tunisia",
-      countryCode: "🇹🇳",
-      location: "Tunis, Tunisia",
-      description: "Developed predictive analytics solution for ATMs daily cashflow forecasting to optimize cash management and reduce operational costs across the banking network.",
-      achievements: [
-        "Built cashflow forecasting models for ATM network optimization and cash management",
-        "Implemented time series analysis algorithms to predict daily cash demand patterns",
-        "Developed automated reporting systems for ATM cash replenishment scheduling"
-      ],
-      technologies: ["Java", "SQL", "Oracle Database", "Spring Framework", "Time Series Forecasting", "ATM Analytics", "Financial Modeling"]
+      technologies: ["Web Development", "RESTful APIs", "Authentication", "Session Management", "Frontend Design", "Backend Integration"]
     }
   ];
 
@@ -114,7 +87,7 @@ const Experience = () => {
             Professional <span className="bg-gradient-primary bg-clip-text text-transparent">Experience</span>
           </h2>
           <p className="text-base md:text-xl text-muted-foreground max-w-3xl mx-auto px-4 leading-relaxed">
-            Specializing in MLOps integration, RAG architectures, LLM deployment, Agentic AI systems, backend development, and production solutions creation across enterprise AI solutions and data-driven innovations
+            Specializing in Generative AI, LLMOps, MLOps, multi-agent RAG systems, and full-stack development across banking, insurance, and telecom sectors
           </p>
         </div>
 
@@ -133,36 +106,20 @@ const Experience = () => {
               </div>
               
               <h3 className="text-2xl md:text-3xl font-bold mb-6 bg-gradient-to-r from-foreground via-accent to-tech-cyan bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">
-                International Professional Journey
+                Professional Experience in Tunisia
               </h3>
               
               <p className="text-base text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed group-hover:text-foreground/80 transition-colors duration-300">
-                Experience across <span className="text-accent font-semibold animate-pulse">three countries</span>, bringing global perspective to cutting-edge AI projects
+                Building <span className="text-accent font-semibold animate-pulse">production-ready AI systems</span> and gaining expertise across multiple industries
               </p>
               
-              {/* Enhanced Dynamic Countries */}
-              <div className="flex flex-col sm:flex-row justify-center items-center gap-4 md:gap-6 max-w-xl mx-auto">
-                <div className="group/country flex items-center gap-3 p-3 md:p-4 bg-muted/10 rounded-xl border border-border/10 hover:border-accent/30 transition-all duration-500 hover:scale-110 hover:-rotate-2 hover:shadow-lg hover:shadow-blue-500/20 cursor-pointer w-full sm:w-auto">
-                  <span className="text-xl md:text-2xl group-hover/country:scale-125 group-hover/country:rotate-12 transition-all duration-300 animate-bounce-slow">🇫🇷</span>
+              {/* Tunisia Focus */}
+              <div className="flex justify-center items-center">
+                <div className="group/country flex items-center gap-3 p-4 md:p-6 bg-muted/10 rounded-xl border border-border/10 hover:border-accent/30 transition-all duration-500 hover:scale-110 hover:shadow-lg hover:shadow-red-500/20 cursor-pointer">
+                  <span className="text-2xl md:text-3xl group-hover/country:scale-125 transition-all duration-300 animate-bounce-slow">��</span>
                   <div className="text-left">
-                    <span className="block text-sm font-semibold text-foreground group-hover/country:text-blue-400 transition-colors duration-300">France</span>
-                    <span className="block text-xs text-muted-foreground group-hover/country:text-blue-300">Paris</span>
-                  </div>
-                </div>
-                
-                <div className="group/country flex items-center gap-3 p-3 md:p-4 bg-muted/10 rounded-xl border border-border/10 hover:border-accent/30 transition-all duration-500 hover:scale-110 hover:rotate-2 hover:shadow-lg hover:shadow-red-500/20 cursor-pointer w-full sm:w-auto">
-                  <span className="text-xl md:text-2xl group-hover/country:scale-125 group-hover/country:-rotate-12 transition-all duration-300 animate-bounce-slow [animation-delay:0.2s]">🇹🇳</span>
-                  <div className="text-left">
-                    <span className="block text-sm font-semibold text-foreground group-hover/country:text-red-400 transition-colors duration-300">Tunisia</span>
-                    <span className="block text-xs text-muted-foreground group-hover/country:text-red-300">Tunis</span>
-                  </div>
-                </div>
-                
-                <div className="group/country flex items-center gap-3 p-3 md:p-4 bg-muted/10 rounded-xl border border-border/10 hover:border-accent/30 transition-all duration-500 hover:scale-110 hover:-rotate-2 hover:shadow-lg hover:shadow-yellow-500/20 cursor-pointer w-full sm:w-auto">
-                  <span className="text-xl md:text-2xl group-hover/country:scale-125 group-hover/country:rotate-12 transition-all duration-300 animate-bounce-slow [animation-delay:0.4s]">🇩🇪</span>
-                  <div className="text-left">
-                    <span className="block text-sm font-semibold text-foreground group-hover/country:text-yellow-400 transition-colors duration-300">Germany</span>
-                    <span className="block text-xs text-muted-foreground group-hover/country:text-yellow-300">Berlin</span>
+                    <span className="block text-lg font-bold text-foreground group-hover/country:text-red-400 transition-colors duration-300">Tunisia</span>
+                    <span className="block text-sm text-muted-foreground group-hover/country:text-red-300">Tunis & Ariana</span>
                   </div>
                 </div>
               </div>

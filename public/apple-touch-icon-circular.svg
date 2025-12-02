@@ -12,7 +12,7 @@
   <circle cx="90" cy="90" r="90" fill="url(#gradient180)" filter="url(#shadow180)"/>
   
   <!-- Profile image clipped to circle -->
-  <image href="/profile-circular.jpg" x="0" y="0" width="180" height="180" clip-path="url(#circle180)" preserveAspectRatio="xMidYMid slice"/>
+  <image href="/profile-photo.png" x="0" y="0" width="180" height="180" clip-path="url(#circle180)" preserveAspectRatio="xMidYMid slice"/>
   
   <!-- Elegant border -->
   <circle cx="90" cy="90" r="87" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>

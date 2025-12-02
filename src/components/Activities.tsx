@@ -1,10 +1,11 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Users, Award, Mic, GraduationCap, Calendar } from "lucide-react";
+import { Users, Award, Mic, GraduationCap, Calendar, ChevronDown, ChevronUp } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 
 const Activities = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [expandedNLP, setExpandedNLP] = useState(false);
   const sectionRef = useRef(null);
 
   useEffect(() => {
@@ -25,70 +26,90 @@ const Activities = () => {
   }, []);
   const activities = [
     {
-      category: "Speaking & Teaching",
-      icon: Mic,
-      items: [
-        {
-          title: "AI Conference Keynote Speaker",
-          description: "Delivered keynote on 'Future of AI in Healthcare' at TechSummit 2023",
-          achievement: "500+ attendees"
-        },
-        {
-          title: "Startups AI Advisor",
-          description: "Providing strategic AI guidance and technical mentorship to early-stage startups",
-          achievement: "5+ startups"
-        },
-        {
-          title: "Workshop Facilitator",
-          description: "Conducted AI/ML workshops for professional development programs",
-          achievement: "200+ professionals trained"
-        }
-      ]
-    },
-    {
-      category: "Certifications",
-      icon: GraduationCap,
-      items: [
-        {
-          title: "Microsoft Azure AI Engineer Associate (AI-102)",
-          description: "Comprehensive certification in designing and implementing AI solutions on Microsoft Azure platform",
-          achievement: "In Progress"
-        },
-        {
-          title: "NVIDIA - AI for Anomaly Detection",
-          description: "Advanced certification in artificial intelligence applications for anomaly detection systems",
-          achievement: "2024"
-        },
-        {
-          title: "NVIDIA - AI for Predictive Maintenance",
-          description: "Specialized certification in AI-driven predictive maintenance solutions",
-          achievement: "2024"
-        },
-        {
-          title: "Duke University - MLOps Certification",
-          description: "Comprehensive certification in Machine Learning Operations and deployment practices",
-          achievement: "2024"
-        },
-        {
-          title: "Basira Lab - Machine Learning & Optimization",
-          description: "Advanced certification in machine learning algorithms and optimization techniques",
-          achievement: "2023"
-        }
-      ]
-    },
-    {
-      category: "Leadership & Organizations",
+      category: "Mentoring & Leadership",
       icon: Users,
       items: [
         {
-          title: "DeepFlow Co-founder & AI Trainer",
-          description: "Co-founded AI education initiative focused on democratizing artificial intelligence knowledge and training in Tunisia",
-          achievement: "Community impact"
+          title: "DeepFlow AI - Mentor",
+          description: "Optimized course delivery by offering online training in workshop format with pre-prepared resources and on-site mentoring. Trained 50 students in one year, enabling club expansion to two new school branches.",
+          achievement: "09/2022 - 12/2024"
         },
         {
-          title: "Enactus Esprit - Founder & Project Manager of MOSCA",
-          description: "Founded and managed the Mosc project within Enactus entrepreneurship organization",
-          achievement: "Social impact project"
+          title: "AI Hackflow West World Edition - Organizer",
+          description: "Organized and supported AI Hackflow West World Edition event hosted by DeepFlow",
+          achievement: "Oct 19-20, 2024"
+        }
+      ]
+    },
+    {
+      category: "AI & Deep Learning Certifications",
+      icon: GraduationCap,
+      items: [
+        {
+          title: "Generative AI with Diffusion Models",
+          description: "NVIDIA - Advanced workshop certification in generative AI focusing on diffusion models and their applications",
+          achievement: "June 2024",
+          link: "https://learn.nvidia.com/certificates?id=YEcrY9JfQNqpbjibvkBFnA"
+        },
+        {
+          title: "Natural Language Processing Specialization",
+          description: "DeepLearning.AI - Comprehensive 4-course specialization covering NLP with Classification, Vector Spaces, Probabilistic Models, Sequence Models, and Attention Models",
+          achievement: "Nov 2024",
+          isExpandable: true,
+          subCertificates: [
+            {
+              title: "Natural Language Processing with Attention Models",
+              link: "https://coursera.org/verify/NQ2DQXDXVYHM"
+            },
+            {
+              title: "Natural Language Processing with Classification and Vector Spaces",
+              link: "https://coursera.org/verify/2N3ZRIPA2I1B"
+            },
+            {
+              title: "Natural Language Processing with Probabilistic Models",
+              link: "https://coursera.org/verify/HT0S5TX1I4R0"
+            },
+            {
+              title: "Natural Language Processing with Sequence Models",
+              link: "https://coursera.org/verify/ZHZCOZTG22IM"
+            }
+          ]
+        },
+        {
+          title: "Fundamentals of Deep Learning",
+          description: "Comprehensive certification covering deep learning fundamentals and neural network architectures",
+          achievement: "Certified",
+          link: "https://courses.nvidia.com/certificates/33622a947f7146ce9239084ed82ae532/"
+        },
+        {
+          title: "Building Transformer-Based NLP Applications",
+          description: "Workshop certification on building transformer-based natural language processing applications",
+          achievement: "Workshop",
+          link: "https://learn.nvidia.com/certificates?id=dYWXn1lSRHi74gpuuotPSA"
+        }
+      ]
+    },
+    {
+      category: "Cloud & Professional Development",
+      icon: Award,
+      items: [
+        {
+          title: "Microsoft Azure Management Tools and Security Solutions",
+          description: "Microsoft via Coursera - Comprehensive training on Azure management, tools, and security implementations",
+          achievement: "Nov 2024",
+          link: "https://coursera.org/verify/6L5LQ2QBKSWG"
+        },
+        {
+          title: "Microsoft Azure Services and Lifecycles",
+          description: "Microsoft via Coursera - In-depth understanding of Azure services architecture and lifecycle management",
+          achievement: "Nov 2024",
+          link: "https://coursera.org/verify/KO9EKESYYQ1M"
+        },
+        {
+          title: "Honoris Sustainability, Work Ethics & Gender Equity",
+          description: "Honoris United Universities - Focus on Climate Change Mitigation, Ethical Decision-Making, Data Governance, and Innovation for Sustainable Development. Blockchain Certificate issued",
+          achievement: "Dec 2024",
+          link: "https://certificate.bcdiploma.com/check/C5DB00147043CD88C8196D603BE22E0C76D05FD951291CA208BB98DE16104BD0UzdRWUIyVmtRSmlxSk43eGI2bitJeTl4RkFnLzNqOFN4ekJPZGExT3NWd3VMUC9K"
         }
       ]
     }
@@ -106,7 +127,7 @@ const Activities = () => {
             Extra <span className="bg-gradient-primary bg-clip-text text-transparent">Activities</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Contributing to the AI community through speaking, research, and mentorship
+            Mentoring the next generation and continuously advancing AI expertise
           </p>
         </div>
         
@@ -149,7 +170,38 @@ const Activities = () => {
                                 <div className="w-2 h-2 bg-gradient-to-r from-tech-blue to-tech-purple rounded-full mt-2 flex-shrink-0"></div>
                                 <div className="space-y-2 flex-1">
                                   <div className="flex justify-between items-start gap-3">
-                                    <h4 className="font-semibold text-foreground">{item.title}</h4>
+                                    {item.link ? (
+                                      <a 
+                                        href={item.link} 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                        className="font-semibold text-foreground hover:text-accent transition-colors duration-300 flex items-center gap-2 group"
+                                      >
+                                        {item.title}
+                                        <svg 
+                                          className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" 
+                                          fill="none" 
+                                          stroke="currentColor" 
+                                          viewBox="0 0 24 24"
+                                        >
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                        </svg>
+                                      </a>
+                                    ) : item.isExpandable ? (
+                                      <button
+                                        onClick={() => setExpandedNLP(!expandedNLP)}
+                                        className="font-semibold text-foreground hover:text-accent transition-colors duration-300 flex items-center gap-2 group"
+                                      >
+                                        {item.title}
+                                        {expandedNLP ? (
+                                          <ChevronUp className="w-4 h-4 text-accent" />
+                                        ) : (
+                                          <ChevronDown className="w-4 h-4 text-accent" />
+                                        )}
+                                      </button>
+                                    ) : (
+                                      <h4 className="font-semibold text-foreground">{item.title}</h4>
+                                    )}
                                     <Badge variant="outline" className="text-xs whitespace-nowrap bg-gradient-to-r from-muted/50 to-muted/30 hover:from-accent/20 hover:to-accent/10 border border-border/30 hover:border-accent/50 transition-all duration-300">
                                       {item.achievement}
                                     </Badge>
@@ -157,6 +209,32 @@ const Activities = () => {
                                   <p className="text-sm text-muted-foreground leading-relaxed">
                                     {item.description}
                                   </p>
+                                  
+                                  {/* Expandable sub-certificates section */}
+                                  {item.isExpandable && expandedNLP && item.subCertificates && (
+                                    <div className="mt-3 pl-4 space-y-2 border-l-2 border-accent/30 animate-fade-in">
+                                      {item.subCertificates.map((subCert, subIndex) => (
+                                        <a
+                                          key={subIndex}
+                                          href={subCert.link}
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                          className="flex items-center gap-2 text-sm text-muted-foreground hover:text-accent transition-colors duration-300 group"
+                                        >
+                                          <div className="w-1.5 h-1.5 bg-accent rounded-full"></div>
+                                          <span className="group-hover:underline">{subCert.title}</span>
+                                          <svg 
+                                            className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300" 
+                                            fill="none" 
+                                            stroke="currentColor" 
+                                            viewBox="0 0 24 24"
+                                          >
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                          </svg>
+                                        </a>
+                                      ))}
+                                    </div>
+                                  )}
                                 </div>
                               </div>
                             ))}

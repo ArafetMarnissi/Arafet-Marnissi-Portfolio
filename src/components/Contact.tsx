@@ -42,16 +42,16 @@ const Contact = () => {
     
     try {
       // EmailJS Configuration (Free solution - 200 emails/month)
-      const EMAILJS_SERVICE_ID = 'service_63pgjaj'; // Your EmailJS service ID ✅
-      const EMAILJS_TEMPLATE_ID = 'template_cps765d'; // Your EmailJS template ID ✅
-      const EMAILJS_PUBLIC_KEY = '04UyHOKXVEBi5orp-'; // Your EmailJS public key ✅
+      const EMAILJS_SERVICE_ID = 'service_wcmwrvk'; // Your EmailJS service ID ✅
+      const EMAILJS_TEMPLATE_ID = 'template_yushay9'; // Your EmailJS template ID ✅
+      const EMAILJS_PUBLIC_KEY = 'J76jxRpzOcDVd9Vym'; // Your EmailJS public key ✅
       
       // Real EmailJS submission - completely free!
       const emailParams = {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
-          to_name: 'Jihed Ben Salah', // Your name
+          to_name: 'Arafet Marnissi', // Your name
         };
 
         // Send email using EmailJS (no backend required!)
@@ -194,7 +194,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-foreground group-hover/item:text-accent transition-colors duration-300">Email</p>
-                    <p className="text-muted-foreground hover:text-accent transition-colors duration-300 cursor-pointer">jihed.bensalah.ai@gmail.com</p>
+                    <p className="text-muted-foreground hover:text-accent transition-colors duration-300 cursor-pointer">arafet.marnissi.ia@outlook.com</p>
                   </div>
                 </div>
                 
@@ -204,7 +204,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-foreground group-hover/item:text-tech-purple transition-colors duration-300">Phone</p>
-                    <p className="text-muted-foreground hover:text-tech-purple transition-colors duration-300 cursor-pointer">+33 07 59 63 28 74</p>
+                    <p className="text-muted-foreground hover:text-tech-purple transition-colors duration-300 cursor-pointer">+216 26845815</p>
                   </div>
                 </div>
                 
@@ -214,7 +214,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-foreground group-hover/item:text-tech-cyan transition-colors duration-300">Location</p>
-                    <p className="text-muted-foreground hover:text-tech-cyan transition-colors duration-300">Paris, France 🇫🇷</p>
+                    <p className="text-muted-foreground hover:text-tech-cyan transition-colors duration-300">Ariana, Tunisia ��</p>
                   </div>
                 </div>
               </CardContent>

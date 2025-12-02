@@ -2,8 +2,7 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { ExternalLink, MapPin, Calendar, ChevronLeft, ChevronRight, Mail, Github, Linkedin } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 // Import images
-import profilePhoto from "@/assets/profile-photo.jpg";
-import centralelogo from "@/assets/school/logo-Centrale_Lille.png";
+import profilePhoto from "@/assets/profile-photo.png";
 import espritLogo from "@/assets/school/esprit.png";
 
 const Hero = () => {
@@ -118,10 +117,10 @@ const Hero = () => {
               <Avatar className="w-32 h-32 md:w-40 md:h-40 border-4 border-tech-blue/30 shadow-glow relative z-10 animate-float">
                 <AvatarImage 
                   src={profilePhoto}
-                  alt="Jihed Ben Salah - Profile photo"
+                  alt="Marnissi Arafet - Profile photo"
                 />
                 <AvatarFallback className="bg-tech-blue text-primary-foreground text-2xl font-bold">
-                  JBS
+                  MA
                 </AvatarFallback>
               </Avatar>
               
@@ -134,7 +133,7 @@ const Hero = () => {
           
           <div className="space-y-6">
             <p className="text-xl text-muted-foreground animate-fade-in" style={{animationDelay: '0.2s', animationFillMode: 'both'}}>
-              Hey, I'm Jihed Ben Salah
+              Hey, I'm Arafet Marnissi
             </p>
             <h1 className="text-5xl md:text-7xl font-bold bg-gradient-text bg-clip-text text-transparent animate-fade-in leading-relaxed py-2" style={{animationDelay: '0.4s', animationFillMode: 'both', lineHeight: '1.3', paddingBottom: '0.5rem'}}>
               {displayText}
@@ -142,14 +141,14 @@ const Hero = () => {
             </h1>
             <div className="pt-2">
               <h2 className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed animate-slide-up" style={{animationDelay: '0.6s', animationFillMode: 'both'}}>
-                Machine Learning Specialist | Data Scientist | AI Solutions Architect
+                Generative AI & LLMOps Specialist | MLOps Engineer | Full-Stack Developer
               </h2>
             </div>
           </div>
           
           <div className="pt-4">
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed animate-slide-up" style={{animationDelay: '0.8s', animationFillMode: 'both'}}>
-              AI Engineer and Data Scientist based in Paris, France, with expertise in MLOps, RAG architectures, and Agentic AI systems. Proven track record of deploying production-ready machine learning solutions, developing intelligent automation systems, and architecting scalable data pipelines. Dual-degree graduate with hands-on experience across France, Germany, and Tunisia.
+              AI Engineer based in Ariana, Tunisia, specializing in Generative AI, LLMOps, and MLOps. Expert in building multi-agent RAG systems, orchestrating AI workflows with LangGraph, and deploying cloud-native solutions on GKE. Proven track record in knowledge graph construction, full-stack development, and end-to-end ML pipeline deployment.
             </p>
           </div>
 
@@ -163,10 +162,10 @@ const Hero = () => {
                   <span className="text-sm font-medium text-muted-foreground">Education</span>
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
-                  Dual-Degree Graduate
+                  Academic Background
                 </h3>
                 <p className="text-muted-foreground">
-                  International academic excellence in AI and engineering
+                  Engineering excellence in Computer Science and AI
                 </p>
               </div>
 
@@ -176,7 +175,7 @@ const Hero = () => {
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-px h-full bg-gradient-to-b from-border via-accent/30 to-border"></div>
                 
                 <div className="space-y-8">
-                  {/* École Centrale - Top */}
+                  {/* ESPRIT - Top */}
                   <div className="flex items-center justify-center animate-slide-in-left" style={{animationDelay: '1.2s', animationFillMode: 'both'}}>
                     <div className="w-full max-w-md mr-8 md:mr-16">
                       <div className="bg-card/80 backdrop-blur-sm border border-border/50 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:scale-[1.02] relative group">
@@ -186,20 +185,20 @@ const Hero = () => {
                         <div className="flex items-start gap-4 relative z-10">
                           <div className="w-12 h-12 bg-white rounded-lg p-2 flex items-center justify-center shadow-sm group-hover:shadow-md transition-shadow duration-300">
                             <img 
-                              src={centralelogo}
-                              alt="École Centrale de Lille" 
+                              src={espritLogo}
+                              alt="ESPRIT School" 
                               className="w-full h-full object-contain"
                             />
                           </div>
                           <div className="flex-1">
                             <div className="flex items-center gap-2 mb-1">
-                              <h4 className="font-semibold text-foreground">École Centrale de Lille</h4>
+                              <h4 className="font-semibold text-foreground">ESPRIT Engineering School</h4>
                               <span className="text-xs px-2 py-1 rounded-full bg-tech-purple/10 text-tech-purple border border-tech-purple/20">Completed</span>
                             </div>
-                            <p className="text-sm text-accent font-medium mb-1">Master in Management & Artificial Intelligence</p>
-                            <p className="text-xs text-muted-foreground mb-2">2024 - 2025 • Lille, France</p>
+                            <p className="text-sm text-accent font-medium mb-1">Computer Science Engineering Degree</p>
+                            <p className="text-xs text-muted-foreground mb-2">09/2021 - 06/2025 • Ariana, Tunisia</p>
                             <p className="text-xs text-muted-foreground leading-relaxed">
-                              Advanced AI research and technology management
+                              Software engineering with specialization in AI and machine learning
                             </p>
                           </div>
                         </div>
@@ -212,7 +211,7 @@ const Hero = () => {
                     <div className="w-full max-w-md ml-8 md:ml-16 opacity-0"></div>
                   </div>
 
-                  {/* ESPRIT - Bottom */}
+                  {/* IPEIN - Bottom */}
                   <div className="flex items-center justify-center animate-slide-in-right" style={{animationDelay: '1.4s', animationFillMode: 'both'}}>
                     <div className="w-full max-w-md mr-8 md:mr-16 opacity-0"></div>
                     
@@ -228,19 +227,19 @@ const Hero = () => {
                           <div className="w-12 h-12 bg-white rounded-lg p-2 flex items-center justify-center shadow-sm group-hover:shadow-md transition-shadow duration-300">
                             <img 
                               src={espritLogo}
-                              alt="ESPRIT University" 
+                              alt="IPEIN Nabeul" 
                               className="w-full h-full object-contain"
                             />
                           </div>
                           <div className="flex-1">
                             <div className="flex items-center gap-2 mb-1">
-                              <h4 className="font-semibold text-foreground">ESPRIT Engineering School</h4>
+                              <h4 className="font-semibold text-foreground">IPEIN Nabeul</h4>
                               <span className="text-xs px-2 py-1 rounded-full bg-tech-blue/10 text-tech-blue border border-tech-blue/20">Completed</span>
                             </div>
-                            <p className="text-sm text-accent font-medium mb-1">Software Engineering Degree</p>
-                            <p className="text-xs text-muted-foreground mb-2">2019 - 2024 • Tunis, Tunisia</p>
+                            <p className="text-sm text-accent font-medium mb-1">Preparatory Engineering Studies</p>
+                            <p className="text-xs text-muted-foreground mb-2">09/2019 - 06/2021 • Nabeul, Tunisia</p>
                             <p className="text-xs text-muted-foreground leading-relaxed">
-                              Software engineering foundations with AI specialization
+                              Intensive mathematics, physics, and engineering foundations
                             </p>
                           </div>
                         </div>
@@ -255,17 +254,17 @@ const Hero = () => {
                 <div className="inline-flex items-center gap-6 px-6 py-3 rounded-full bg-muted/10 border border-border/30">
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-tech-blue rounded-full"></div>
-                    <span className="text-sm text-muted-foreground">5 Years</span>
+                    <span className="text-sm text-muted-foreground">6 Years</span>
                   </div>
                   <div className="w-px h-4 bg-border"></div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-tech-purple rounded-full"></div>
-                    <span className="text-sm text-muted-foreground">2 Countries</span>
+                    <span className="text-sm text-muted-foreground">Tunisia</span>
                   </div>
                   <div className="w-px h-4 bg-border"></div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-accent rounded-full"></div>
-                    <span className="text-sm text-muted-foreground">Dual Expertise</span>
+                    <span className="text-sm text-muted-foreground">AI Engineering</span>
                   </div>
                 </div>
               </div>
@@ -290,7 +289,7 @@ const Hero = () => {
                 </span>
               </h3>
               <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
-                Driving AI innovation through hands-on education, strategic mentorship, and scalable solutions
+                Building production-ready AI solutions and mentoring the next generation of developers
               </p>
               
               {/* Decorative elements */}
@@ -302,56 +301,56 @@ const Hero = () => {
             </div>
             
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-6xl mx-auto">
-              {/* AI Workshops */}
+              {/* Students Trained */}
               <div className="group animate-scale-in bg-card/30 backdrop-blur-sm border border-border/20 rounded-xl p-4 hover:bg-card/50 transition-all duration-300 hover:scale-105 hover:shadow-lg" style={{animationDelay: '1.7s', animationFillMode: 'both'}}>
                 <div className="text-center space-y-2">
-                  <div className="text-2xl md:text-3xl font-bold text-tech-cyan">30+</div>
-                  <div className="text-xs text-muted-foreground leading-tight">AI/ML Workshops</div>
+                  <div className="text-2xl md:text-3xl font-bold text-tech-cyan">50+</div>
+                  <div className="text-xs text-muted-foreground leading-tight">Students Trained</div>
                   <div className="w-8 h-px bg-gradient-to-r from-tech-cyan to-tech-blue mx-auto opacity-60"></div>
                 </div>
               </div>
 
-              {/* Students Trained */}
+              {/* Years of Experience */}
               <div className="group animate-scale-in bg-card/30 backdrop-blur-sm border border-border/20 rounded-xl p-4 hover:bg-card/50 transition-all duration-300 hover:scale-105 hover:shadow-lg" style={{animationDelay: '1.8s', animationFillMode: 'both'}}>
                 <div className="text-center space-y-2">
-                  <div className="text-2xl md:text-3xl font-bold text-tech-blue">1000+</div>
-                  <div className="text-xs text-muted-foreground leading-tight">Professionals Trained</div>
+                  <div className="text-2xl md:text-3xl font-bold text-tech-blue">2+</div>
+                  <div className="text-xs text-muted-foreground leading-tight">Years Experience</div>
                   <div className="w-8 h-px bg-gradient-to-r from-tech-blue to-tech-purple mx-auto opacity-60"></div>
                 </div>
               </div>
 
-              {/* Startups Mentored */}
+              {/* Projects Completed */}
               <div className="group animate-scale-in bg-card/30 backdrop-blur-sm border border-border/20 rounded-xl p-4 hover:bg-card/50 transition-all duration-300 hover:scale-105 hover:shadow-lg" style={{animationDelay: '1.9s', animationFillMode: 'both'}}>
                 <div className="text-center space-y-2">
                   <div className="text-2xl md:text-3xl font-bold text-tech-purple">5+</div>
-                  <div className="text-xs text-muted-foreground leading-tight">Startups Mentored</div>
+                  <div className="text-xs text-muted-foreground leading-tight">Major Projects</div>
                   <div className="w-8 h-px bg-gradient-to-r from-tech-purple to-accent mx-auto opacity-60"></div>
                 </div>
               </div>
 
-              {/* Projects Completed */}
+              {/* Mentoring Experience */}
               <div className="group animate-scale-in bg-card/30 backdrop-blur-sm border border-border/20 rounded-xl p-4 hover:bg-card/50 transition-all duration-300 hover:scale-105 hover:shadow-lg" style={{animationDelay: '2.0s', animationFillMode: 'both'}}>
                 <div className="text-center space-y-2">
-                  <div className="text-2xl md:text-3xl font-bold text-accent">10+</div>
-                  <div className="text-xs text-muted-foreground leading-tight">Projects Completed</div>
+                  <div className="text-2xl md:text-3xl font-bold text-accent">2+</div>
+                  <div className="text-xs text-muted-foreground leading-tight">Years Mentoring</div>
                   <div className="w-8 h-px bg-gradient-to-r from-accent to-tech-cyan mx-auto opacity-60"></div>
                 </div>
               </div>
 
-              {/* International Experience */}
+              {/* Technologies Mastered */}
               <div className="group animate-scale-in bg-card/30 backdrop-blur-sm border border-border/20 rounded-xl p-4 hover:bg-card/50 transition-all duration-300 hover:scale-105 hover:shadow-lg" style={{animationDelay: '2.1s', animationFillMode: 'both'}}>
                 <div className="text-center space-y-2">
-                  <div className="text-2xl md:text-3xl font-bold text-emerald-400">3</div>
-                  <div className="text-xs text-muted-foreground leading-tight">Countries Experience</div>
+                  <div className="text-2xl md:text-3xl font-bold text-emerald-400">15+</div>
+                  <div className="text-xs text-muted-foreground leading-tight">Tech Stack</div>
                   <div className="w-8 h-px bg-gradient-to-r from-emerald-400 to-tech-cyan mx-auto opacity-60"></div>
                 </div>
               </div>
 
-              {/* Years of Experience */}
+              {/* Certifications */}
               <div className="group animate-scale-in bg-card/30 backdrop-blur-sm border border-border/20 rounded-xl p-4 hover:bg-card/50 transition-all duration-300 hover:scale-105 hover:shadow-lg" style={{animationDelay: '2.2s', animationFillMode: 'both'}}>
                 <div className="text-center space-y-2">
-                  <div className="text-2xl md:text-3xl font-bold text-orange-400">3+</div>
-                  <div className="text-xs text-muted-foreground leading-tight">Years Experience</div>
+                  <div className="text-2xl md:text-3xl font-bold text-orange-400">10</div>
+                  <div className="text-xs text-muted-foreground leading-tight">Certifications</div>
                   <div className="w-8 h-px bg-gradient-to-r from-orange-400 to-tech-purple mx-auto opacity-60"></div>
                 </div>
               </div>
@@ -362,9 +361,9 @@ const Hero = () => {
               <div className="max-w-4xl mx-auto bg-gradient-to-r from-card/20 via-card/40 to-card/20 backdrop-blur-sm border border-border/20 rounded-2xl p-5">
                 <div className="flex flex-col md:flex-row items-center gap-4">
                   <div className="flex-1 text-left">
-                    <h4 className="text-lg font-semibold text-foreground mb-2">Driving AI Innovation</h4>
+                    <h4 className="text-lg font-semibold text-foreground mb-2">Building AI Solutions</h4>
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                      Committed to democratizing AI knowledge and empowering the next generation of innovators through hands-on workshops, strategic mentorship, and production-ready project development.
+                      Passionate about creating production-ready AI systems, from multi-agent RAG architectures to cloud-native deployments. Committed to mentoring and sharing knowledge with the developer community through DeepFlow AI.
                     </p>
                   </div>
                   <div className="flex items-center gap-2 text-accent">
@@ -378,17 +377,17 @@ const Hero = () => {
           
           {/* Enhanced Social Links */}
           <div className="flex justify-center space-x-8 pt-6 animate-fade-in" style={{animationDelay: '2.6s', animationFillMode: 'both'}}>
-            <a href="https://github.com/jihed-ben-salah" target="_blank" rel="noopener noreferrer" className="group text-muted-foreground hover:text-accent transition-all duration-300 hover:scale-110 animate-float" style={{animationDelay: '2.8s'}}>
+            <a href="https://github.com/ArafetMarnissi" target="_blank" rel="noopener noreferrer" className="group text-muted-foreground hover:text-accent transition-all duration-300 hover:scale-110 animate-float" style={{animationDelay: '2.8s'}}>
               <div className="p-3 rounded-full bg-background/10 group-hover:bg-accent/20 transition-colors">
                 <Github className="w-6 h-6" />
               </div>
             </a>
-            <a href="https://www.linkedin.com/in/ben-salah-jihed/" target="_blank" rel="noopener noreferrer" className="group text-muted-foreground hover:text-accent transition-all duration-300 hover:scale-110 animate-float" style={{animationDelay: '3.0s'}}>
+            <a href="https://linkedin.com/in/arafet-marnissi" target="_blank" rel="noopener noreferrer" className="group text-muted-foreground hover:text-accent transition-all duration-300 hover:scale-110 animate-float" style={{animationDelay: '3.0s'}}>
               <div className="p-3 rounded-full bg-background/10 group-hover:bg-accent/20 transition-colors">
                 <Linkedin className="w-6 h-6" />
               </div>
             </a>
-            <a href="mailto:bensalah.jihed@outlook.com" className="group text-muted-foreground hover:text-accent transition-all duration-300 hover:scale-110 animate-float" style={{animationDelay: '3.2s'}}>
+            <a href="mailto:arafet.marnissi.ia@outlook.com" className="group text-muted-foreground hover:text-accent transition-all duration-300 hover:scale-110 animate-float" style={{animationDelay: '3.2s'}}>
               <div className="p-3 rounded-full bg-background/10 group-hover:bg-accent/20 transition-colors">
                 <Mail className="w-6 h-6" />
               </div>
@@ -399,7 +398,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-sm text-muted-foreground pt-2">
             <div className="flex items-center gap-2">
               <MapPin className="w-4 h-4" />
-              <span>Based in Paris, France</span>
+              <span>Based in Ariana, Tunisia</span>
             </div>
             <div className="flex items-center gap-2">
               <Calendar className="w-4 h-4" />
@@ -477,24 +476,10 @@ const Hero = () => {
                   {/* Photo cards */}
                   {[
                     {
-                      src: "/assets/conferences/vivatech-2025-paris.jpg",
-                      title: "VivaTech 2025",
-                      location: "Paris, France",
-                      type: "Conference",
-                      date: "2025"
-                    },
-                    {
-                      src: "/assets/conferences/aihackflow-conference-2023.jpg", 
-                      title: "AI HackFlow Conference",
+                      src: "/assets/conferences/deepflow-workshop-2023.jpg",
+                      title: "DeepFlow Workshop",
                       location: "ESPRIT School of Engineering",
-                      type: "Conference",
-                      date: "2023"
-                    },
-                    {
-                      src: "/assets/conferences/presenting-aihackflow-2023.jpg",
-                      title: "Presenting at AI HackFlow",
-                      location: "ESPRIT School of Engineering",
-                      type: "Presentation",
+                      type: "Workshop",
                       date: "2023"
                     },
                     {
@@ -505,32 +490,11 @@ const Hero = () => {
                       date: "2023"
                     },
                     {
-                      src: "/assets/conferences/cariad-hack-munich-2024.jpeg",
-                      title: "CARIAD Hack by VW Group",
-                      location: "Munich, Germany",
-                      type: "Hackathon",
+                      src: "/assets/conferences/aihackflow-westworld-2024.jpg",
+                      title: "AI HackFlow - West World Edition",
+                      location: "Tunis Science City",
+                      type: "Competition",
                       date: "2024"
-                    },
-                    {
-                      src: "/assets/conferences/deepflow-workshop-2023.jpg",
-                      title: "DeepFlow Workshop",
-                      location: "ESPRIT School of Engineering",
-                      type: "Workshop",
-                      date: "2023"
-                    },
-                    {
-                      src: "/assets/conferences/innovation-hack-2022.jpg",
-                      title: "Innovation Hack 2022",
-                      location: "Sousse, Tunisia",
-                      type: "Hackathon",
-                      date: "2022"
-                    },
-                    {
-                      src: "/assets/conferences/ost-event-2023.jpg",
-                      title: "Open Startup Tunisia Event",
-                      location: "Tunisia",
-                      type: "Event",
-                      date: "2023"
                     }
                   ].map((photo, index) => (
                     <div

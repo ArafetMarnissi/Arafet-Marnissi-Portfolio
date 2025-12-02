@@ -4,7 +4,6 @@ import Skills from "@/components/Skills";
 import Services from "@/components/Services";
 import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
-import Hackathons from "@/components/Hackathons";
 import Activities from "@/components/Activities";
 import Contact from "@/components/Contact";
 import Collaborate from "@/components/Collaborate";
@@ -25,9 +24,6 @@ const Index = () => {
         </section>
         <section id="projects">
           <Projects />
-        </section>
-        <section id="hackathons">
-          <Hackathons />
         </section>
         <section id="activities">
           <Activities />
@@ -89,7 +85,7 @@ const Index = () => {
             {/* Developer credit */}
             <div className="space-y-2">
               <p className="text-lg font-semibold bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent hover:from-accent hover:to-accent/80 transition-all duration-300">
-                Developed by <span className="font-bold text-accent">Jihed Ben Salah</span>
+                Portfolio by <span className="font-bold text-accent">Arafet Marnissi</span>
               </p>
               <p className="text-sm text-muted-foreground flex items-center justify-center gap-2">
                 <span>©</span>

@@ -47,7 +47,7 @@ const Services = () => {
         "MLOps Pipeline Implementation",
         "Performance Optimization & Scaling"
       ],
-      technologies: ["Python", "TensorFlow", "PyTorch", "MLflow", "Docker", "Kubernetes"],
+      technologies: ["Python", "TensorFlow", "PyTorch", "MLflow", "Docker", "Kubernetes", "AWS ECS", "AWS Fargate"],
       gradient: "from-blue-600 to-purple-600",
       bgGradient: "from-blue-600/10 to-purple-600/10",
       deliverables: "Production-ready AI models with comprehensive documentation"

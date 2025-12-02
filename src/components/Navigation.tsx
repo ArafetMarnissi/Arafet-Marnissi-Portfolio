@@ -19,7 +19,7 @@ const Navigation = () => {
       setScrollProgress(currentProgress);
       
       // Determine active section
-      const sections = ["home", "skills", "experience", "projects", "hackathons", "activities", "services"];
+      const sections = ["home", "skills", "experience", "projects", "activities", "services"];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -40,7 +40,6 @@ const Navigation = () => {
     { name: "Skills", href: "#skills" },
     { name: "Experience", href: "#experience" },
     { name: "Projects", href: "#projects" },
-    { name: "Hackathons", href: "#hackathons" },
     { name: "Activities", href: "#activities" },
     { name: "Services", href: "#services" }
   ];
@@ -53,7 +52,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="#home" className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-            Jihed Ben Salah
+            Arafet Marnissi
           </a>
 
           {/* Desktop Navigation */}

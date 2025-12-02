@@ -194,66 +194,131 @@ All colors MUST be  .animate-float-delayed {
   
   .starry-bg {
     background: 
-      /* Balanced tech grid */
-      linear-gradient(90deg, transparent 96%, rgba(59, 130, 246, 0.15) 100%),
-      linear-gradient(0deg, transparent 96%, rgba(139, 92, 246, 0.12) 100%),
+      /* Floating particle dots - multiple layers */
+      radial-gradient(circle at 10% 20%, rgba(59, 130, 246, 0.4) 2px, transparent 3px),
+      radial-gradient(circle at 90% 15%, rgba(139, 92, 246, 0.35) 2px, transparent 3px),
+      radial-gradient(circle at 30% 80%, rgba(34, 197, 234, 0.4) 2px, transparent 3px),
+      radial-gradient(circle at 70% 60%, rgba(236, 72, 153, 0.35) 2px, transparent 3px),
+      radial-gradient(circle at 50% 40%, rgba(59, 130, 246, 0.3) 2px, transparent 3px),
       
-      /* Moderate circuit lines */
-      linear-gradient(45deg, transparent 48%, rgba(59, 130, 246, 0.12) 50%, transparent 52%),
-      linear-gradient(-45deg, transparent 48%, rgba(139, 92, 246, 0.10) 50%, transparent 52%),
+      /* Medium particles */
+      radial-gradient(circle at 25% 35%, rgba(139, 92, 246, 0.25) 3px, transparent 4px),
+      radial-gradient(circle at 75% 25%, rgba(34, 197, 234, 0.3) 3px, transparent 4px),
+      radial-gradient(circle at 15% 70%, rgba(59, 130, 246, 0.25) 3px, transparent 4px),
+      radial-gradient(circle at 85% 85%, rgba(236, 72, 153, 0.2) 3px, transparent 4px),
       
-      /* Tech connection dots */
-      radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.25) 1px, transparent 3px),
-      radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.22) 1px, transparent 3px),
-      radial-gradient(circle at 20% 80%, rgba(34, 197, 234, 0.20) 1px, transparent 3px),
-      radial-gradient(circle at 80% 20%, rgba(236, 72, 153, 0.18) 1px, transparent 3px),
+      /* Larger glowing particles */
+      radial-gradient(circle at 40% 15%, rgba(59, 130, 246, 0.2) 4px, transparent 8px),
+      radial-gradient(circle at 60% 75%, rgba(139, 92, 246, 0.15) 4px, transparent 8px),
+      radial-gradient(circle at 20% 50%, rgba(34, 197, 234, 0.2) 4px, transparent 8px),
       
-      /* Data flow streams */
-      repeating-linear-gradient(
-        90deg,
-        transparent,
-        transparent 100px,
-        rgba(59, 130, 246, 0.08) 102px,
-        rgba(59, 130, 246, 0.08) 104px,
-        transparent 106px
-      ),
+      /* Ambient particle glow */
+      radial-gradient(ellipse at 35% 30%, rgba(59, 130, 246, 0.15) 0%, transparent 30%),
+      radial-gradient(ellipse at 65% 70%, rgba(139, 92, 246, 0.12) 0%, transparent 35%),
+      radial-gradient(ellipse at 80% 20%, rgba(34, 197, 234, 0.10) 0%, transparent 30%),
+      radial-gradient(ellipse at 15% 85%, rgba(236, 72, 153, 0.08) 0%, transparent 25%),
       
-      /* Neural network nodes */
-      radial-gradient(circle at 35% 25%, rgba(59, 130, 246, 0.15) 0%, transparent 25%),
-      radial-gradient(circle at 75% 65%, rgba(139, 92, 246, 0.12) 0%, transparent 25%),
-      radial-gradient(circle at 25% 75%, rgba(34, 197, 234, 0.10) 0%, transparent 25%),
+      /* Subtle connection lines */
+      linear-gradient(135deg, transparent 48%, rgba(59, 130, 246, 0.05) 50%, transparent 52%),
+      linear-gradient(45deg, transparent 48%, rgba(139, 92, 246, 0.04) 50%, transparent 52%),
       
-      /* Ambient tech glow */
-      radial-gradient(ellipse at 50% 20%, rgba(59, 130, 246, 0.12) 0%, transparent 50%),
-      radial-gradient(ellipse at 20% 80%, rgba(139, 92, 246, 0.10) 0%, transparent 50%),
-      radial-gradient(ellipse at 80% 50%, rgba(34, 197, 234, 0.08) 0%, transparent 50%),
-      
-      /* Balanced base gradient */
-      linear-gradient(135deg, 
-        rgba(71, 85, 105, 0.15) 0%,
-        rgba(51, 65, 85, 0.20) 25%,
-        rgba(71, 85, 105, 0.15) 50%,
-        rgba(51, 65, 85, 0.20) 75%,
-        rgba(71, 85, 105, 0.15) 100%
+      /* Deep space gradient base */
+      radial-gradient(ellipse at 50% 50%, 
+        rgba(30, 41, 59, 0.4) 0%,
+        rgba(15, 23, 42, 0.6) 50%,
+        rgba(2, 6, 23, 0.8) 100%
       );
       
     background-size: 
-      100px 100px,
-      100px 100px,
-      60px 60px,
-      60px 60px,
-      80px 80px,
-      80px 80px,
-      80px 80px,
-      80px 80px,
-      200px 40px,
+      200px 200px,
       250px 250px,
-      250px 250px,
-      250px 250px,
+      180px 180px,
+      220px 220px,
+      240px 240px,
       300px 300px,
-      300px 300px,
-      300px 300px,
+      280px 280px,
+      320px 320px,
+      350px 350px,
+      400px 400px,
+      380px 380px,
+      420px 420px,
+      600px 600px,
+      650px 650px,
+      550px 550px,
+      700px 700px,
+      150px 150px,
+      200px 200px,
       100% 100%;
+    
+    background-position:
+      0% 0%,
+      100% 0%,
+      0% 100%,
+      100% 100%,
+      50% 50%,
+      25% 25%,
+      75% 75%,
+      10% 90%,
+      90% 10%,
+      40% 20%,
+      60% 80%,
+      20% 60%,
+      0% 0%,
+      50% 50%,
+      100% 100%,
+      25% 75%,
+      0% 0%,
+      0% 0%,
+      0% 0%;
+    
+    animation: particleFloat 20s ease-in-out infinite;
+  }
+  
+  @keyframes particleFloat {
+    0%, 100% {
+      background-position:
+        0% 0%,
+        100% 0%,
+        0% 100%,
+        100% 100%,
+        50% 50%,
+        25% 25%,
+        75% 75%,
+        10% 90%,
+        90% 10%,
+        40% 20%,
+        60% 80%,
+        20% 60%,
+        0% 0%,
+        50% 50%,
+        100% 100%,
+        25% 75%,
+        0% 0%,
+        0% 0%,
+        0% 0%;
+    }
+    50% {
+      background-position:
+        5% 10%,
+        95% 5%,
+        10% 95%,
+        90% 90%,
+        55% 45%,
+        30% 20%,
+        70% 80%,
+        15% 85%,
+        85% 15%,
+        45% 25%,
+        55% 75%,
+        25% 55%,
+        10% 10%,
+        60% 40%,
+        90% 90%,
+        30% 70%,
+        5% 5%,
+        5% 5%,
+        0% 0%;
+    }
   }
   
   @keyframes fadeIn {

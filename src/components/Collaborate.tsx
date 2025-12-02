@@ -84,7 +84,7 @@ const Collaborate = () => {
               {/* Book Consultation Button */}
               <div className="mt-8 text-center">
                 <a 
-                  href="https://calendly.com/jihed-bensalah-ai/30-min-meeting" 
+                  href="https://calendly.com/arafet-marnissi-ia/new-meeting" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-block"

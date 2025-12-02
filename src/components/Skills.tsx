@@ -32,83 +32,90 @@ const Skills = () => {
       skills: [
         { name: "Python", specialty: "Primary Language" },
         { name: "JavaScript", specialty: "Full-Stack Development" },
-        { name: "R", specialty: "Data Science" },
+        { name: "R", specialty: "Data Science & Analytics" },
         { name: "C", specialty: "System Programming" },
         { name: "C++", specialty: "Performance Computing" },
+        { name: "Java", specialty: "Enterprise Development" },
+        { name: "C#", specialty: "Application Development" },
         { name: "Shell Scripting", specialty: "Automation" }
       ],
       gradient: "from-tech-blue to-tech-purple",
       bgGradient: "from-tech-blue/10 to-tech-purple/10"
     },
     {
-      title: "Backend Development",
-      icon: Server,
-      skills: [
-        { name: "Django", specialty: "Full-Featured Web Framework" },
-        { name: "Flask", specialty: "Lightweight & Flexible" },
-        { name: "FastAPI", specialty: "Modern Async API" },
-        { name: "RESTful APIs", specialty: "API Design & Development" },
-        { name: "Microservices", specialty: "Distributed Architecture" },
-        { name: "PostgreSQL", specialty: "Database Management" }
-      ],
-      gradient: "from-accent to-tech-cyan",
-      bgGradient: "from-accent/10 to-tech-cyan/10"
-    },
-    {
-      title: "Generative & Agentic AI",
+      title: "Generative AI & LLMOps",
       icon: Bot,
       skills: [
+        { name: "LangGraph", specialty: "AI Workflow Orchestration" },
         { name: "LangChain", specialty: "LLM Application Framework" },
-        { name: "LangGraph", specialty: "Agentic Workflows" },
-        { name: "RAG", specialty: "Retrieval Augmented Generation" },
-        { name: "Vector Databases", specialty: "Qdrant, Pinecone, Chroma" },
-        { name: "LLMs", specialty: "GPT, Llama, Claude" },
-        { name: "Agentic Systems", specialty: "Multi-Agent Architectures" }
+        { name: "Agentic RAG", specialty: "Multi-Agent Systems" },
+        { name: "Prompt Engineering", specialty: "LLM Optimization" },
+        { name: "Fine-tuning", specialty: "Model Customization" },
+        { name: "Embedding", specialty: "Semantic Search" }
       ],
       gradient: "from-tech-purple to-accent",
       bgGradient: "from-tech-purple/10 to-accent/10"
     },
     {
-      title: "AI/ML Frameworks",
+      title: "Backend & Frameworks",
+      icon: Server,
+      skills: [
+        { name: "FastAPI", specialty: "Modern Async API" },
+        { name: "Flask", specialty: "Lightweight Web Framework" },
+        { name: "SpringBoot", specialty: "Java Enterprise" },
+        { name: "React", specialty: "Frontend Development" },
+        { name: "Angular", specialty: "Enterprise Frontend" },
+        { name: "RESTful APIs", specialty: "API Development" }
+      ],
+      gradient: "from-accent to-tech-cyan",
+      bgGradient: "from-accent/10 to-tech-cyan/10"
+    },
+    {
+      title: "AI/ML & NLP",
       icon: Brain,
       skills: [
         { name: "TensorFlow", specialty: "Deep Learning" },
         { name: "PyTorch", specialty: "Research & Production" },
-        { name: "Keras", specialty: "Neural Networks" },
-        { name: "Scikit-learn", specialty: "ML Algorithms" },
         { name: "NLTK", specialty: "Natural Language Processing" },
-        { name: "SpaCy", specialty: "Advanced NLP" }
+        { name: "SpaCy", specialty: "Advanced NLP" },
+        { name: "Question Answering", specialty: "QA Systems" },
+        { name: "Time Series", specialty: "Forecasting & Prediction" },
+        { name: "Computer Vision", specialty: "Image Processing" },
+        { name: "Neural Networks", specialty: "Deep Learning Models" }
       ],
       gradient: "from-tech-cyan to-tech-blue",
       bgGradient: "from-tech-cyan/10 to-tech-blue/10"
     },
     {
-      title: "Data Science & Analytics",
-      icon: Database,
-      skills: [
-        { name: "Pandas", specialty: "Data Manipulation" },
-        { name: "NumPy", specialty: "Numerical Computing" },
-        { name: "Matplotlib", specialty: "Data Visualization" },
-        { name: "Seaborn", specialty: "Statistical Plots" },
-        { name: "Plotly", specialty: "Interactive Viz" },
-        { name: "OpenCV", specialty: "Computer Vision" }
-      ],
-      gradient: "from-tech-blue to-accent",
-      bgGradient: "from-tech-blue/10 to-accent/10"
-    },
-    {
-      title: "Cloud & DevOps",
+      title: "MLOps & DevOps",
       icon: Cloud,
       skills: [
-        { name: "Azure ML", specialty: "Machine Learning" },
-        { name: "AWS SageMaker", specialty: "ML Platform" },
         { name: "Docker", specialty: "Containerization" },
-        { name: "Jenkins", specialty: "CI/CD" },
-        { name: "MLflow", specialty: "ML Lifecycle" },
-        { name: "Databricks", specialty: "Data Platform" }
+        { name: "Kubernetes (GKE)", specialty: "Container Orchestration" },
+        { name: "AWS ECS", specialty: "Container Orchestration" },
+        { name: "AWS Fargate", specialty: "Serverless Containers" },
+        { name: "MLflow", specialty: "ML Lifecycle Management" },
+        { name: "DVC", specialty: "Data Version Control" },
+        { name: "GitLab CI/CD", specialty: "Automation Pipeline" },
+        { name: "Terraform", specialty: "Infrastructure as Code" },
+        { name: "Cloud Run", specialty: "Serverless Deployment" }
       ],
       gradient: "from-accent to-tech-purple",
       bgGradient: "from-accent/10 to-tech-purple/10"
+    },
+    {
+      title: "Databases & Storage",
+      icon: Database,
+      skills: [
+        { name: "PostgreSQL", specialty: "Relational Database" },
+        { name: "Oracle", specialty: "Enterprise Database" },
+        { name: "MySQL", specialty: "Open Source DB" },
+        { name: "Weaviate", specialty: "Vector Database" },
+        { name: "ChromaDB", specialty: "AI-Native Database" },
+        { name: "Knowledge Graphs", specialty: "Graph Databases" }
+      ],
+      gradient: "from-tech-blue to-accent",
+      bgGradient: "from-tech-blue/10 to-accent/10"
     }
   ];
 
@@ -124,7 +131,7 @@ const Skills = () => {
             Skills & <span className="bg-gradient-primary bg-clip-text text-transparent">Technologies</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Mastering cutting-edge technologies across AI, machine learning, and full-stack development to build intelligent, scalable solutions
+            Expertise in Generative AI, LLMOps, MLOps, and full-stack development to build production-ready intelligent systems
           </p>
         </div>
         
